@@ -65,7 +65,7 @@
         <mxCell id="5pKJ-dRwUtHqWaumvsPP-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5pKJ-dRwUtHqWaumvsPP-17" target="5pKJ-dRwUtHqWaumvsPP-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5pKJ-dRwUtHqWaumvsPP-17" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;application-service&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;Component&lt;div&gt;编排领域层完成任务&lt;/div&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="5pKJ-dRwUtHqWaumvsPP-17" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;application-service&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;Component&lt;div&gt;编排领域层和基础设施层&lt;/div&gt;&lt;div&gt;完成业务任务&lt;/div&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="285" y="465" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="5pKJ-dRwUtHqWaumvsPP-18" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="5pKJ-dRwUtHqWaumvsPP-17">
@@ -136,7 +136,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5pKJ-dRwUtHqWaumvsPP-30" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;common&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;Component&lt;div&gt;通用业务无关组件&lt;/div&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="5pKJ-dRwUtHqWaumvsPP-30" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;pkg&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;Component&lt;div&gt;通用业务无关组件&lt;/div&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="270" y="280" width="130" height="90" as="geometry" />
         </mxCell>
         <mxCell id="5pKJ-dRwUtHqWaumvsPP-31" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="5pKJ-dRwUtHqWaumvsPP-30">
