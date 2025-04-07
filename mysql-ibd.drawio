@@ -1080,6 +1080,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="6RJJHpAj4XGMG_zFkrAq-540" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6RJJHpAj4XGMG_zFkrAq-538" target="6RJJHpAj4XGMG_zFkrAq-539">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6RJJHpAj4XGMG_zFkrAq-538" value="select&amp;nbsp; * from t where id = ? 怎么办？&lt;div&gt;每次都要进行 I/O 操作吗？&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201" y="2253" width="291.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6RJJHpAj4XGMG_zFkrAq-539" value="批量加载到内存中！即 Page！默认 16KB 一个 Page" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201" y="2363" width="291.25" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
