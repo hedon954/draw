@@ -1,0 +1,556 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.1">
+  <diagram name="第 1 页" id="yxIo4tmgAWy6D-zYQDc5">
+    <mxGraphModel dx="1779" dy="820" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="560" width="100" x="140" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="560" width="100" x="580" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="h3Dw9yIe_mz_TWxXZ1Uk-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="340" as="sourcePoint" />
+            <mxPoint x="240" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-5" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="① ClientHello&lt;div&gt;（客户端随机数ClientRandom、加密套件列表）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="420" as="sourcePoint" />
+            <mxPoint x="190" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-7" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="② ServerHello&lt;div&gt;（服务器随机数ServerRandom、选择ECDHE）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="629.5" y="460" as="sourcePoint" />
+            <mxPoint x="189.5" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-9" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Certificate（包含服务器长期公钥）" vertex="1">
+          <mxGeometry relative="1" x="0.0114" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="499.5" as="sourcePoint" />
+            <mxPoint x="190" y="499.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-11" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ServerKeyExchange&lt;div&gt;（临时公钥 B，数字签名）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0114" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="600" as="sourcePoint" />
+            <mxPoint x="630" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-13" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="③ ClientKeyExchange&lt;div&gt;（临时公钥 A）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="720" as="sourcePoint" />
+            <mxPoint x="190" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-15" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="④ Finshed 报文" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="680" as="sourcePoint" />
+            <mxPoint x="630" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-17" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Finished 报文" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="194" y="760" as="sourcePoint" />
+            <mxPoint x="633.5" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-20" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Request" vertex="1">
+          <mxGeometry relative="1" x="-0.0171" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630.25" y="780" as="sourcePoint" />
+            <mxPoint x="189.75" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-22" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Response" vertex="1">
+          <mxGeometry relative="1" x="0.0034" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="阶段一：协商与参数交换（明文）" vertex="1">
+          <mxGeometry height="20" width="520" x="150" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=20;" value="阶段二：密钥生成与握手完成（后续都是加密传输）" vertex="1">
+          <mxGeometry height="20" width="520" x="150" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TLS1.2&amp;nbsp; - ECDHE" vertex="1">
+          <mxGeometry height="76" width="137" x="324" y="119" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-29" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="430" width="100" x="1147" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-30" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="441" width="100" x="1587" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="h3Dw9yIe_mz_TWxXZ1Uk-30" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1197" y="380" as="sourcePoint" />
+            <mxPoint x="1247" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-32" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="① ClientHello&lt;div&gt;（客户端随机数ClientRandom、加密套件列表）&lt;/div&gt;&lt;div&gt;Key Share（临时公钥 A）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1637" y="460" as="sourcePoint" />
+            <mxPoint x="1197" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-34" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="② ServerHello&lt;div&gt;（服务器随机数ServerRandom、选定的算法）&lt;/div&gt;&lt;div&gt;Key Share（临时公钥 B）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-35" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1634" y="546" as="sourcePoint" />
+            <mxPoint x="1194" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-36" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Certificate（包含服务器长期公钥）&lt;div&gt;CertificateVerify（数字前面）&lt;/div&gt;&lt;div&gt;Finished（握手验证摘要）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0114" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-39" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1197" y="593" as="sourcePoint" />
+            <mxPoint x="1637" y="593" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-40" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="③ Finished" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-45" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1197.25" y="637" as="sourcePoint" />
+            <mxPoint x="1636.75" y="637" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-46" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Request" vertex="1">
+          <mxGeometry relative="1" x="-0.0171" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-47" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1637.5" y="657" as="sourcePoint" />
+            <mxPoint x="1197" y="657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-48" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Response" vertex="1">
+          <mxGeometry relative="1" x="0.0034" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="阶段一：协商与参数交换（明文）" vertex="1">
+          <mxGeometry height="20" width="520" x="1157" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=20;" value="阶段二：密钥生成与握手完成（后续都是加密传输）" vertex="1">
+          <mxGeometry height="20" width="520" x="1157" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TLS1.3&amp;nbsp; - ECDHE" vertex="1">
+          <mxGeometry height="76" width="137" x="1331" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-55" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="560" width="100" x="-703" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-56" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="560" width="100" x="-263" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="h3Dw9yIe_mz_TWxXZ1Uk-56" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-653" y="320" as="sourcePoint" />
+            <mxPoint x="-603" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-58" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="① ClientHello&lt;div&gt;（客户端随机数ClientRandom、加密套件列表）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-59" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-213" y="400" as="sourcePoint" />
+            <mxPoint x="-653" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-60" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="② ServerHello&lt;div&gt;（服务器随机数ServerRandom、选择ECDHE）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-61" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-213" y="426" as="sourcePoint" />
+            <mxPoint x="-653" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-62" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Certificate（包含服务器长期公钥）" vertex="1">
+          <mxGeometry relative="1" x="0.0114" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-65" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-653" y="556" as="sourcePoint" />
+            <mxPoint x="-213" y="556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-66" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="③ ClientKeyExchange&lt;div&gt;（随机预主密钥 Pre-Master-Secret）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-67" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-213" y="644" as="sourcePoint" />
+            <mxPoint x="-653" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-68" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-67" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="④ Finshed 报文" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-69" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-653" y="586" as="sourcePoint" />
+            <mxPoint x="-213" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-70" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-69" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Finished 报文" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-71" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-652.75" y="696" as="sourcePoint" />
+            <mxPoint x="-213.25" y="696" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-72" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-71" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Request" vertex="1">
+          <mxGeometry relative="1" x="-0.0171" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-73" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-212.75" y="726" as="sourcePoint" />
+            <mxPoint x="-653.25" y="726" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-74" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-73" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP Response" vertex="1">
+          <mxGeometry relative="1" x="0.0034" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="阶段一：协商与参数交换（明文）" vertex="1">
+          <mxGeometry height="20" width="520" x="-693" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=20;" value="阶段二：密钥生成与握手完成（后续都是加密传输）" vertex="1">
+          <mxGeometry height="20" width="520" x="-693" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-77" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TLS1.2&amp;nbsp; - RSA" vertex="1">
+          <mxGeometry height="76" width="137" x="-519" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-78" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="441" width="100" x="2011" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-79" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="441" width="100" x="2451" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-80" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="h3Dw9yIe_mz_TWxXZ1Uk-79" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2061" y="432" as="sourcePoint" />
+            <mxPoint x="2111" y="382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-81" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1-RTT 握手完成" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-82" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2499" y="478" as="sourcePoint" />
+            <mxPoint x="2059" y="478" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-83" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NewSessionTicket（里面藏着 PSK）" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-86" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2061" y="599" as="sourcePoint" />
+            <mxPoint x="2501" y="599" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-87" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-86" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ClientHello&lt;div&gt;Session Ticket&lt;/div&gt;&lt;div&gt;Key Share&lt;/div&gt;&lt;div&gt;加密的 Early Data (GET /)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="阶段一：之前的连接（埋伏笔）" vertex="1">
+          <mxGeometry height="20" width="520" x="2021" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=20;" value="阶段二：0-RTT 重连（极速）" vertex="1">
+          <mxGeometry height="20" width="520" x="2021" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-94" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TLS1.3&amp;nbsp; - O-RTT" vertex="1">
+          <mxGeometry height="76" width="137" x="2195" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="客户端保存 Ticket" vertex="1">
+          <mxGeometry height="40" width="120" x="1909" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-97" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="1. 取出 PSK，生成早期密钥&lt;div&gt;2. 用早期密钥加密 HTTP GET / 请求&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="202" x="1842" y="583" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-98" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2501.06" y="686" as="sourcePoint" />
+            <mxPoint x="2060.9488888888886" y="686" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-99" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-98" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ServerHello + Finished&lt;div&gt;（握手完成，切换到新密钥）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0096" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-100" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2501.0511111111114" y="740" as="sourcePoint" />
+            <mxPoint x="2060.94" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-101" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-100" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="加密的 HTTP Response" vertex="1">
+          <mxGeometry relative="1" x="-0.0096" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ������ 并行处理：&lt;div&gt;1. 验证 Ticket，提取 PSK&lt;/div&gt;&lt;div&gt;2. 解密 Early Data，立即交给后端应用处理！&lt;/div&gt;&lt;div&gt;3. 同时利用 Key Share 完成正式握手&lt;/div&gt;" vertex="1">
+          <mxGeometry height="66" width="256" x="2529" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-103" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="441" width="100" x="2018" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-104" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="441" width="100" x="2458" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-105" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2068" y="1279" as="sourcePoint" />
+            <mxPoint x="2507.5" y="1279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-106" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-105" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="① QUIC Initial 包&lt;div&gt;（TLS Client Hello + Key Share A）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-107" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2506" y="1325" as="sourcePoint" />
+            <mxPoint x="2066" y="1325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-108" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="② QUIC Initial 包&lt;div&gt;（TLS Server Hello + Key Share B）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-109" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2070" y="1448" as="sourcePoint" />
+            <mxPoint x="2510" y="1448" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-110" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-109" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="③ QUIC Handshake 包&lt;div&gt;（TLS Finished）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-113" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="QUIC 1-RTT" vertex="1">
+          <mxGeometry height="76" width="137" x="2202" y="1031" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-114" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="生成临时公钥A&lt;div&gt;封装进 TLS ClientHello&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="137" x="1916" y="1262" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="1. 计算握手密钥，解密验证证书&lt;div&gt;2. 生成最终会话密钥&lt;/div&gt;&lt;div&gt;3. 准备 HTTP 请求&lt;/div&gt;" vertex="1">
+          <mxGeometry height="63" width="202" x="1849" y="1403" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="握手完成&lt;div&gt;处理 HTTP 请求&lt;/div&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="2522" y="1543" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-121" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2507" y="1406" as="sourcePoint" />
+            <mxPoint x="2067" y="1406" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-122" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-121" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC Handshake 包&lt;div&gt;（TLS 证书 + 签名 + Finished）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-123" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2070" y="1521" as="sourcePoint" />
+            <mxPoint x="2510" y="1521" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-124" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-123" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC Short Header 包&lt;div&gt;（HTTP/3 GET 请求...）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-126" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="阶段一：协商与参数交换（明文）" vertex="1">
+          <mxGeometry height="20" width="520" x="2018" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=20;" value="阶段二：密钥生成与握手完成（后续都是加密传输）" vertex="1">
+          <mxGeometry height="20" width="520" x="2018" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-128" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="1. 处理 ClientHello，生成临时公钥 B&lt;div&gt;2. 生成握手密钥，进而生成会话密钥&lt;/div&gt;&lt;div&gt;3. 准备证书和签名&lt;/div&gt;&lt;div&gt;4. 发送 finished 报文&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="204" x="2548" y="1287" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-129" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2507" y="1571" as="sourcePoint" />
+            <mxPoint x="2067" y="1571" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-130" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-129" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC Short Header 包&lt;div&gt;（HTTP/3 200 OK 响应...）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-131" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="441" width="100" x="1988" y="2042" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-132" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Server" vertex="1">
+          <mxGeometry height="441" width="100" x="2428" y="2042" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-133" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2038" y="2169" as="sourcePoint" />
+            <mxPoint x="2477.5" y="2169" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-134" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-133" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="① QUIC Initial 包&lt;div&gt;（TLS Client Hello + Key Share A）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-137" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2040" y="2208" as="sourcePoint" />
+            <mxPoint x="2480" y="2208" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-138" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC O-RTT 包（早期密钥加密）&lt;div&gt;（HTTP/3 GET 请求...）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-139" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="QUIC 0-RTT" vertex="1">
+          <mxGeometry height="76" width="137" x="2172" y="1921" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-140" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="1. 使用 PSK 生成早期密钥&lt;div&gt;2. 加密 HTTP 请求&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="1873" y="2152" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-141" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="收到响应，握手同时完成" vertex="1">
+          <mxGeometry height="37" width="167" x="1854" y="2360" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-142" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="&lt;span style=&quot;text-align: left;&quot;&gt;������ 并行处理：&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. 验证 Ticket，提取 PSK&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. 解密 0-RTT，立即交给后端应用处理！&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3. 同时利用 Key Share 完成正式握手&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="271" x="2495" y="2232" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-143" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2477" y="2296" as="sourcePoint" />
+            <mxPoint x="2037" y="2296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-144" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-143" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="② QUIC Initial 包&lt;div&gt;（TLS Server Hello + Key Share B）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-147" parent="1" style="rounded=0;whiteSpace=wrap;html=1;opacity=20;fillColor=#f8cecc;strokeColor=#b85450;" value="之前已经获取 PSK" vertex="1">
+          <mxGeometry height="20" width="520" x="1988" y="2110" as="geometry" />
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-150" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2477" y="2369" as="sourcePoint" />
+            <mxPoint x="2037" y="2369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-151" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-150" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC Short Header 包&lt;div&gt;（HTTP/3 200 OK 响应...）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-152" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2476" y="2331" as="sourcePoint" />
+            <mxPoint x="2036" y="2331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3Dw9yIe_mz_TWxXZ1Uk-153" connectable="0" parent="h3Dw9yIe_mz_TWxXZ1Uk-152" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="QUIC Handshake 包&lt;div&gt;（TLS 证书 + 签名 + Finished）&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0091" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
